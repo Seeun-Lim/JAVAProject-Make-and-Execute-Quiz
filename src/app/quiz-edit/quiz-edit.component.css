@@ -1,0 +1,75 @@
+html,body{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    list-style-type: none;
+}
+
+h2{
+    font-size: 22px;
+}
+
+
+.make{
+    float: left;
+    font-size: 20px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.show{
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.navtext{
+    font-size: 20px;
+}
+.showdetail{
+    border: 1px solid white;
+    font-size:12px;
+}
+
+.text{
+    display: inline-block;
+}
+
+#client{
+    text-align: right;
+    width: 200px;
+}
+
+#user{
+    width: 450px;
+}
+
+input{
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    border: 1px solid;
+    border-color: black black lightblue black;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+button{
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    margin-left: 7px;
+}
+
+button:hover{
+    border-color: black;
+    background-color: lightblue;
+    color: black;
+}

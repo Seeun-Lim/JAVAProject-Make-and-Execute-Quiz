@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="quiz-execute.component.css">
+    </head>
+    <body>
+        <div class="page">
+            <h2>Let's execute your own quiz!</h2>
+            <div class="show">
+                <ul class="lists">
+                    <li *ngFor="let question of questionlist">
+                        <p class="answer_texts" id="question_number">{{question.id}}</p>
+                        <p class="answer_texts" id="question">{{question.question}}</p><br/>
+                        <p class="answer_texts" id="number">A.</p>
+                        <p class="answer_texts" id="text">{{question.answer_A}}</p><br/>
+                        <p class="answer_texts" id="number">B.</p>
+                        <p class="answer_texts" id="text">{{question.answer_B}}</p><br/>
+                        <p class="answer_texts" id="number">C.</p>
+                        <p class="answer_texts" id="text">{{question.answer_C}}</p><br/>
+                
+                            <input #answer type="text" placeholder="Write your answer"/>
+                            <button (click)="add(question.answer,answer.value);answer.value=''"><label>Check</label></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,43 @@
+html,body{
+    font-family: 'Nunito', sans-serif;
+}
+
+#page{
+    vertical-align: middle;
+}
+
+.message_box{
+    width: 500px;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+.big_text{
+    color: lightblue;
+    font-size: 23px;
+}
+
+.small_text{
+    font-size: 13px;
+}
+
+.messages{
+    font-size: 17px;
+    color: white;
+}
+
+button{
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    border-color: black;
+    background-color: lightblue;
+    color: brown;
+}

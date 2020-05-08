@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="quiz-edit.component.css">
+    </head>
+    <body>
+        <h2>Let's make your own quiz!</h2>
+        <div class="page">
+            <div class="make">
+                <label><p class="text" id="client">New Question:</p>
+                    <input #question class="text" id="user" type="text" placeholder="Write your question" /><br/>
+                </label>
+                <label><p class="text" id="client">Answer A:</p>
+                    <input #answer_A class="text" id="user" type="text" placeholder="Write your answer"><br/>
+                </label>
+                <label><p class="text" id="client">Answer B:</p>
+                    <input #answer_B class="text" id="user" type="text" placeholder="Write your answer"/><br/>
+                </label>
+                <label><p class="text" id="client">Answer C:</p>
+                    <input #answer_C class="text" id="user" type="text" placeholder="Write your answer"/><br/>
+                </label>
+                <label><p class="text" id="client">Correct Answer:</p>
+                    <input #answer class="text" id="user" type="text" placeholder="You can only write among A,B,C"/><br/>
+                </label>
+                <button (click)="add(question.value, answer_A.value, answer_B.value, answer_C.value,answer.value); 
+                                question.value='';answer_A.value='';answer_B.value='';answer_C.value='';answer.value=''"><label>Complete</label></button><br/>
+            </div>
+
+            <div class="show">
+                <p class="navtext">You can see your Quiz list here</p>
+                <div class="showdetail">
+                    <ul class="lists">
+                        <li *ngFor="let question of questionlist">
+                            <span class="badge">{{question.id}}.</span> {{question.question}}<br/>
+                            <span class="answer">A.</span> {{question.answer_A}}<br/>
+                            <span class="answer">B.</span> {{question.answer_B}}<br/>
+                            <span class="answer">C.</span> {{question.answer_C}}<br/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

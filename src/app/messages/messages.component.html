@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="messages.component.css">
+    </head>
+    <body>
+        <div id="page">
+            <h2><span class="big_text">Messages </span> <span class="small_text">[Your progress will show here]</span></h2>
+            <div class="message_box" *ngIf="messageService.messages.length">
+                
+                <div class="messages" *ngFor='let message of messageService.messages'>{{message}}</div><br/>
+                <button (click)="messageService.clear()">Clear</button><br/>
+            </div>
+        </div>
+    </body>
+</html>
