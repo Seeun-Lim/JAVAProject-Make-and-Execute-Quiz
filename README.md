@@ -1,6 +1,11 @@
-# JavaProject
+# JavaProject - Make and Execute Quiz
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+
+## Component
+
+This project has 3 components folders named with quiz-edit, quiz-execute and messages.
+Services folder has the service files and datamodel folder has interface folder.
 
 ## Development server
 
